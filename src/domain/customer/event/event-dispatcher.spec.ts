@@ -170,11 +170,11 @@ describe("Domain events tests", () => {
     eventDispatcher.notify(customerAddressChangedEvent);
 
     expect(spyEnviaConsoleLog1Handler).toHaveBeenCalled();
-    expect(spyEnviaConsoleLog1Handler).toHaveBeenCalled();
-    expect(spyEnviaConsoleLog1Handler).toHaveBeenCalled();
+    expect(spyEnviaConsoleLog2Handler).toHaveBeenCalled();
+    expect(spyEnviaConsoleLogHandler).toHaveBeenCalled();
     expect(spyEnviaConsoleLog1Handler).toHaveBeenCalledTimes(1);
-    expect(spyEnviaConsoleLog1Handler).toHaveBeenCalledTimes(1);
-    expect(spyEnviaConsoleLog1Handler).toHaveBeenCalledTimes(1);
+    expect(spyEnviaConsoleLog2Handler).toHaveBeenCalledTimes(1);
+    expect(spyEnviaConsoleLogHandler).toHaveBeenCalledTimes(1);
 
   });
 });
